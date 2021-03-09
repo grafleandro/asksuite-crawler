@@ -1,0 +1,23 @@
+{
+  "name": "robo-crawler-asksuite",
+  "version": "1.0.0",
+  "description": "Robo crawler rede horteleira",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "swagger-autogen": "node swagger.js"
+  },
+  "author": "Leandro Machado Siqueira",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.5",
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "puppeteer": "^8.0.0",
+    "swagger-ui-express": "^4.1.6"
+  }
+}

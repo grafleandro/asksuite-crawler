@@ -1,0 +1,52 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "REST API ASKSUITE",
+    "description": "API de consulta a hoteis"
+  },
+  "host": "localhost:8080",
+  "basePath": "/",
+  "tags": [],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/buscar": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "checkin": {
+                  "type": "string",
+                  "example": "01/01/2021"
+                },
+                "checkout": {
+                  "type": "string",
+                  "example": "01/01/2021"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Sucesso na consulta."
+          },
+          "400": {
+            "description": "Server failure."
+          }
+        }
+      }
+    }
+  },
+  "definitions": {}
+}
