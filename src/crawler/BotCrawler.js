@@ -1,6 +1,7 @@
 const axios = require('axios')
 const cheerio = require('cheerio')
 const puppeteer = require('puppeteer');
+const convert = require('../logic/convert')
 
 class BotCrawler {
 
@@ -14,7 +15,7 @@ class BotCrawler {
     }
 
     async init(dates) {
-        
+
         let page
 
         this.browser = await puppeteer.launch({
@@ -67,12 +68,13 @@ class BotCrawler {
                                 promotionalCode: item.getElementsByClassName('price-total')[0].innerText,
                                 flexibleTariff: item.getElementsByClassName('price-total')[1].innerText,
                             },
-                            imageUrl: item.getElementsByClassName('image-step2')[0].getAttribute('src')
+                            imageUrl: item.getElementsByClassName('image-step2')[0].getAttribute('src'),
+                            imageBase64: null
                         })
                     }
                     
                 })
-                    
+                
                 return dateHotels
             })
 
@@ -80,6 +82,15 @@ class BotCrawler {
 
         }while(loop < results.length)
 
+        loop = 0
+
+        do{
+            let img64 = await convert.convert(response[loop].imageUrl)
+            response[loop].imageBase64 = ('data:image/png;base64,' + img64.base64)
+            loop++
+
+        }while(loop < response.length)
+        
         return response
     }
 

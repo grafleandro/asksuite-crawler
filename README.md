@@ -26,6 +26,8 @@ Para a execução do projeto deve ser executado o comando:
 
 - <i> npm run dev </i> 
 
+Observação a URL de login foi emulada diretamente no codigo, haja vista que não foi utilizado bando de dados. Não foi utilizado banco de dados para salvar os dados coletados pois será apenas uma API de consumo de dados que não possui relevancia, sendo assim 
+
 ## Agradecimento
 
     Agradeço a empresa pela oportunidade para demostrar minhas skills, aumentar meus conhecimentos por meio desse desafio, bem como conhecer novos profissonais como o Felippe e Mateus.

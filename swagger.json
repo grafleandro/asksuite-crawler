@@ -5,7 +5,7 @@
     "title": "REST API ASKSUITE",
     "description": "API de consulta a hoteis"
   },
-  "host": "localhost:8080",
+  "host": "localhost:3000",
   "basePath": "/",
   "tags": [],
   "schemes": [
@@ -14,24 +14,26 @@
   "consumes": [],
   "produces": [],
   "paths": {
-    "/buscar": {
+    "/api/buscar": {
       "post": {
         "tags": [],
         "description": "",
         "parameters": [
           {
-            "name": "obj",
+            "name": "busca",
             "in": "body",
             "schema": {
-              "type": "object",
+              "type": "multipart/form-data",
               "properties": {
                 "checkin": {
                   "type": "string",
-                  "example": "01/01/2021"
+                  "example": "01/01/2021",
+                  "required":true
                 },
                 "checkout": {
                   "type": "string",
-                  "example": "01/01/2021"
+                  "example": "01/01/2021",
+                  "required":true
                 }
               }
             }
@@ -42,7 +44,52 @@
             "description": "Sucesso na consulta."
           },
           "400": {
-            "description": "Server failure."
+            "description": "Falha na  consulta."
+          }
+        }
+      }
+    },
+    "/login":{
+      "post":{
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "multipart/form-data",
+              "properties": {
+                "user": {
+                  "type": "string",
+                  "example": "luiz"
+                },
+                "password": {
+                  "type": "string",
+                  "example": "123"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Sucesso no login."
+          },
+          "400": {
+            "description": "Erro no login."
+          }
+        }
+      }
+    },
+    "/logout":{
+      "post":{
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Sucesso no logout."
+          },
+          "400": {
+            "description": "Erro no logout."
           }
         }
       }
