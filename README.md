@@ -10,6 +10,10 @@ O teste consiste em realizar uma API que vai realizar  crawler no site https://l
 
 ## Tecnologias Utilizadas
 
+- Node JS - https://nodejs.org/en/docs/
+
+- Express - https://expressjs.com/pt-br/
+
 - JWT - [Artigo] https://www.luiztools.com.br/post/autenticacao-json-web-token-jwt-em-nodejs/
 
 - Puppeteer - https://devdocs.io/puppeteer/
@@ -86,6 +90,19 @@ A URL de login foi emulada diretamente no codigo, haja vista que não foi utiliz
 
 Agradeço a empresa pela oportunidade para demostrar minhas skills, aumentar meus conhecimentos por meio desse desafio, bem como conhecer novos profissonais como o Felippe e Mateus.
 
+
+## Autor
+
+<a href="https://www.linkedin.com/in/grafleandro">
+ <img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C5603AQHue9qvNGvPsw/profile-displayphoto-shrink_200_200/0/1522862470699?e=1620864000&v=beta&t=nncJ0wE7trp3yQigBKCZyVgNt0VKhaYgwPX5dvacLs0" width="100px;" alt=""/>
+ <br />
+ <sub><b>Leandro Machado Siqueira</b></sub></a> <a href="https://blog.rocketseat.com.br/author/thiago//" title="LMS"></a>
+
+
+👋🏽 Entre em contato!
+
+ [![Linkedin Badge](https://img.shields.io/badge/-Leandro-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/grafleandro)](https://www.linkedin.com/in/grafleandro) 
+[![Gmail Badge](https://img.shields.io/badge/-tgmarinho@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tgmarinho@gmail.com)](mailto:grafleandro@gmail.com)
 
 ## Licença
 
