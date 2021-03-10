@@ -102,7 +102,7 @@ Agradeço a empresa pela oportunidade para demostrar minhas skills, aumentar meu
 👋🏽 Entre em contato!
 
  [![Linkedin Badge](https://img.shields.io/badge/-Leandro-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/grafleandro)](https://www.linkedin.com/in/grafleandro) 
-[![Gmail Badge](https://img.shields.io/badge/-tgmarinho@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tgmarinho@gmail.com)](mailto:grafleandro@gmail.com)
+[![Gmail Badge](https://img.shields.io/badge/-grafleandro@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:grafleandro@gmail.com)](mailto:grafleandro@gmail.com)
 
 ## Licença
 
