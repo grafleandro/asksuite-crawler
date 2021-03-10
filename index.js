@@ -19,24 +19,24 @@ app.use('/api', verifyJWT, apiController)
 
 app.post('/login', (req, res, next) => {
     //esse teste abaixo deve ser feito no seu banco de dados
-    if(req.body.user === 'luiz' && req.body.password === '123'){
+    if(req.body.user === 'leandro' && req.body.password === '123'){
       //auth ok
-      const id = 1; //esse id viria do banco de dados
+      const id = 1 //esse id viria do banco de dados
       const token = jwt.sign({ id }, process.env.SECRET, {
-        expiresIn: 3000 // expires in 5min
-      });
-      return res.json({ auth: true, token: token });
+        expiresIn: 3000 
+      })
+      return res.json({ auth: true, token: token })
     }
     
-    res.status(500).json({message: 'Login inválido!'});
+    res.status(500).json({message: 'Login inválido!'})
 })
 
 app.post('/logout', function(req, res) {
-    res.json({ auth: false, token: null });
+    res.json({ auth: false, token: null })
 })
 
 app.listen('3000', () => {
-    console.log('O servidor esta rodando na porta 3000');
+    console.log('O servidor esta rodando na porta 3000')
 })
 
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swagger));
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swagger))

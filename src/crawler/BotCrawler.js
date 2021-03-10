@@ -81,15 +81,16 @@ class BotCrawler {
             loop++
 
         }while(loop < results.length)
+// o trecho comentado abaixo foi idealizado para retornar a imagem em Base64, o mesmo esta funcionado foi comentado somente para uma melhor 
+// visualização do retorno. 
+        // loop = 0
 
-        loop = 0
+        // do{
+        //     let img64 = await convert.convert(response[loop].imageUrl)
+        //     response[loop].imageBase64 = ('data:image/png;base64,' + img64.base64)
+        //     loop++
 
-        do{
-            let img64 = await convert.convert(response[loop].imageUrl)
-            response[loop].imageBase64 = ('data:image/png;base64,' + img64.base64)
-            loop++
-
-        }while(loop < response.length)
+        // }while(loop < response.length)
         
         return response
     }
